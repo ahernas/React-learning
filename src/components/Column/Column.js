@@ -6,14 +6,14 @@ class Column extends React.Component {
     render() {
         return (
             <section className={styles.component}>
-                <h3 className={styles.title}>{this.props.titleColumn}</h3>
+                <h3 className={styles.title}>{this.props.title}</h3>
             </section>
         )
     }
 }
 
 Column.propTypes = {
-    titleColumn: PropTypes.node.isRequired,
+    title: PropTypes.node.isRequired,
 };
 
 export default Column;
