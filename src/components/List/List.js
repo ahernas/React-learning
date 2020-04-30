@@ -2,17 +2,20 @@ import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
+
+import {settings} from '../../data/dataStore.js';
 import PropTypes from 'prop-types';
 
 class List extends React.Component {
     static propTypes = {
         title: PropTypes.node.isRequired,
-        children: PropTypes.node.isRequired,
+        description: PropTypes.node.isRequired,
         image: PropTypes.string.isRequired,
+        columns: PropTypes.array.isRequired,
     }
 
     static defaultProps = {
-        children: <p>Interesting things I want to check out!</p>,
+        description: settings.defaultListDescription,
     }
 
     render() {
@@ -23,7 +26,7 @@ class List extends React.Component {
                 />
 
                 <div className={styles.description}>
-                    {this.props.children}
+                    {this.props.description}
                 </div>
 
                 <div className={styles.columns}>
