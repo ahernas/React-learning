@@ -3,17 +3,17 @@ import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
 class Card extends React.Component {
-    render() {
-        return (
-            <section className={styles.component}>
-                <h3>{this.props.title}</h3>
-            </section>
-        )
-    }
+  render() {
+    return (
+      <section className={styles.component}>
+        <h3>{this.props.title}</h3>
+      </section>
+    );
+  }
 }
 
 Card.propTypes = {
-    title: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
 };
 
 export default Card;
