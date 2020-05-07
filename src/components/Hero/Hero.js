@@ -9,7 +9,7 @@ class Hero extends React.Component {
     return (
       <header className={styles.component}>
         <h2 className={styles.title}>{ReactHtmlParser(this.props.titleText)}</h2>
-        <img className={styles.image} src={this.props.imageBackground}/>
+        <img className={styles.image} src={this.props.imageBackground} alt="View of space"/>
       </header>
     );
   }
