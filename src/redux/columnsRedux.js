@@ -2,7 +2,6 @@ import shortid from 'shortid';
 
 // selectors
 export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
-
 // action name creator
 const reducerName = 'columns';
 const createActionName = name => `app/${reducerName}/${name}`;
