@@ -1,0 +1,13 @@
+@import '../../styles/settings.scss';
+
+.header {
+  text-align: center;
+  color: $color-success;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.text {
+  text-align: center;
+  padding: 0 20px 50px 0;
+}
