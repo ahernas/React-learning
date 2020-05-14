@@ -109,6 +109,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Products to buy <sup>soon!</sup>',
+    description: 'Interesting products I want to try!',
+    image: 'https://i.postimg.cc/zvFbVQVZ/flat-lay-photo-of-fruits-and-vegetables-1660027.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Materials to study <sup>soon!</sup>',
+    description: 'Interesting materials I need to have a successful study!',
+    image: 'https://i.postimg.cc/qRd2qyjK/analog-binder-blank-book-236111.jpg',
+  },
 ];
 
 const columns = [
