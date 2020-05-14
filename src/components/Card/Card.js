@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 class Card extends React.Component {
 
   render() {
-    const {title} = this.props;
+    const {title, onClick} = this.props;
     return (
-      <section className={styles.component}>
+      <section className={styles.component} onClick={onClick}>
         <h3>{title}</h3>
       </section>
     );
@@ -16,6 +16,7 @@ class Card extends React.Component {
 
 Card.propTypes = {
   title: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default Card;

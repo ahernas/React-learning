@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Column/Icon.js';
 import Container from '../Container/Container.js';
+import {withRouter} from 'react-router';
 
 class Search extends React.Component {
   static propTypes = {
@@ -32,6 +33,7 @@ class Search extends React.Component {
   }
 
   handleOK(){
+    this.props.history.push(`/search/${this.state.value}`);
     this.props.changeSearchString(this.state.value);
   }
 
@@ -68,4 +70,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default withRouter(Search);

@@ -44,6 +44,11 @@ export const FaqData = {
   ],
 };
 
+export const SearchData = {
+  title: 'Search results',
+  image:'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+};
+
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
